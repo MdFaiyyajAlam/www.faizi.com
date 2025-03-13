@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Md Faiyyaj Alam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0A192F] text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#0A192F]/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-[#64FFDA]">MFA</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link text-gray-300 hover:text-[#64FFDA] px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="about.html" class="nav-link text-gray-300 hover:text-[#64FFDA] px-3 py-2 text-sm font-medium">About</a>
+                        <a href="projects.html" class="nav-link text-gray-300 hover:text-[#64FFDA] px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="blog.html" class="nav-link text-gray-300 hover:text-[#64FFDA] px-3 py-2 text-sm font-medium">Blog</a>
+                        <a href="contact.html" class="nav-link text-gray-300 hover:text-[#64FFDA] px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-nav-toggle p-2 rounded-md text-gray-300 hover:text-[#64FFDA]">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="pt-32 pb-20 relative">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJyZ2JhKDEwMCwgMjU1LCAyMTgsIDAuMSkiLz48L3N2Zz4=')] opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">My Projects</h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Explore my portfolio of web applications and projects built with modern technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="py-8 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="php">PHP</button>
+                <button class="filter-btn" data-filter="vue">Vue.js</button>
+                <button class="filter-btn" data-filter="react">React</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="laravel">
+                    <div class="relative">
+                        <img src="assets/image/project/ecom.jpg" alt="E-Commerce Platform" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">E-Commerce Platform</h3>
+                            <p class="text-sm text-[#64FFDA]">Laravel, MySQL, Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="php">
+                    <div class="relative">
+                        <img src="assets/image/project/task.jpg" alt="Task Management System" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">Task Management System</h3>
+                            <p class="text-sm text-[#64FFDA]">PHP, MySQL, jQuery</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">A collaborative task management system with real-time updates, file attachments, and team collaboration features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="vue">
+                    <div class="relative">
+                        <img src="assets/image/project/blog.jpg" alt="Blog Platform" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">Blog Platform</h3>
+                            <p class="text-sm text-[#64FFDA]">Laravel, Vue.js, Tailwind</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">A modern blog platform with rich text editor, categories, tags, and social sharing features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="react">
+                    <div class="relative">
+                        <img src="assets/image/project/port.jpg" alt="Portfolio Website" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">Portfolio Website</h3>
+                            <p class="text-sm text-[#64FFDA]">React, Tailwind, Framer Motion</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">A modern portfolio website with smooth animations, dark mode, and responsive design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="laravel">
+                    <div class="relative">
+                        <img src="assets/image/project/crm.jpg" alt="CRM System" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">CRM System</h3>
+                            <p class="text-sm text-[#64FFDA]">Laravel, Vue.js, MySQL</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">A comprehensive CRM system with lead management, contact tracking, and sales pipeline features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card card-hover bg-[#112240] rounded-xl overflow-hidden border border-gray-800" data-category="php">
+                    <div class="relative">
+                        <img src="assets/image/project/event.jpg" alt="Inventory Management" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-xl font-semibold text-white">Inventory Management</h3>
+                            <p class="text-sm text-[#64FFDA]">PHP, MySQL, jQuery</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400 mb-4">An inventory management system with stock tracking, order management, and reporting features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-[#64FFDA] hover:text-[#64FFDA]/80 font-medium">
+                                View Project <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-[#64FFDA]">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A192F] border-t border-gray-800 relative">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJyZ2JhKDEwMCwgMjU1LCAyMTgsIDAuMSkiLz48L3N2Zz4=')] opacity-10"></div>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center">
+                <div class="flex justify-center space-x-6">
+                    <a href="https://linkedin.com/in/md-faiyyaj-alam-3743a2195" class="social-icon">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/MdFaiyyajAlam" class="social-icon">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="mailto:mdfaiyyajalam54918@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+                <p class="mt-4 text-base text-gray-400">
+                    © 2024 Md Faiyyaj Alam. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
